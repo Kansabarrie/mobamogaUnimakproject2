@@ -20,6 +20,19 @@ const images = [
 		url: "images/mssg1.jpg",
 		title: "Girls Students from Mathora",
 		description: ""
+	},
+	{
+		url: "images/mssb2.jpg",
+		title: "Government Secondary School for Boys Magburaka",
+		description: "The lower boding home for government Secondary School for Boys Magbura"
+	},
+	{
+		url: "images/gssg2.jpg",
+		title: ""
+	},
+	{
+		url: "images/mssb3.jpg",
+		title: ""
 	}
 ];
 
@@ -37,7 +50,7 @@ const Banner = () => {
 	}, []);
 
 	return (
-		<div className="relative overflow-hidden w-full h-[600px]"> {/* Increased height to 600px */}
+		<div className="relative overflow-hidden w-full h-[700px]"> {/* Increased height to 600px */}
 			<div
 				className="flex transition-transform duration-1000"
 				style={{
@@ -47,11 +60,11 @@ const Banner = () => {
 				{images.map((image, index) => (
 					<div
 						key={index}
-						className="w-full flex-shrink-0 h-[600px] bg-cover bg-center relative" // Increased height to 600px
+						className="w-full flex-shrink-0 h-[900px] bg-cover bg-center relative" // Increased height to 600px
 						style={{ backgroundImage: `url(${image.url})` }}
 					>
 						{/* Overlay with Title and Description */}
-						<div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white p-4">
+						<div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white p-4">
 							<h1 className="text-4xl font-bold mb-2">{image.title}</h1>
 							<p className="text-lg text-center">{image.description}</p>
 						</div>

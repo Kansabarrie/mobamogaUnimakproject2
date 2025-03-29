@@ -1,24 +1,25 @@
-import * as url from "node:url";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
 	return (
-		<header className="bg-blue-900 text-white py-4">
-			<div className="container mx-auto flex justify-between items-center">
-				{/*{*/}
-				{/*	url:"images/mogalogo.png",*/}
-				{/*	title:*/}
+		<header className="bg-blue-900 text-white py-4 shadow-md">
+			<div className="container mx-auto flex justify-between float-left px-20">
+				{/* Logo and Title */}
+				<div className="flex items-left">
+					<Image src="/images/mogalogo.png" alt="MOBA MOGA Logo" width={50} height={50} className="mr-3" />
+					<h1 className="text-2xl font-bold">MOBA MOGA UNIMAK</h1>
+				</div>
 
-				{/*}*/}
-
-				<h1 className="text-2xl font-bold">MOBA MOGA UNIMAK</h1>
-				<nav>
-					<a href="/" className="px-4">Home</a>
-					<a href="/About us" className="px-4">Shop</a>
-					<a href="/Projects" className="px-4">Our Project</a>
-					<a href="/Service" className="px-4">Service</a>
-					<a href="/Contact" className="px-4">Contact Us</a>
-					<a href="/auth/login" className="px-4">Login</a>
-					<a href="/auth/register" className="px-4">Register</a>
+				{/* Navigation Menu */}
+				<nav className="flex space-x-6 float-right px-0">
+					<Link href="/" className="hover:underline">Home</Link>
+					<Link href="/about-us" className="hover:underline">About Us</Link>
+					<Link href="/projects" className="hover:underline">Our Projects</Link>
+					<Link href="/services" className="hover:underline">Services</Link>
+					<Link href="/contact" className="hover:underline">Contact Us</Link>
+					<Link href="/auth/login" className="hover:underline">Login</Link>
+					<Link href="/auth/register" className="hover:underline">Register</Link>
 				</nav>
 			</div>
 		</header>
