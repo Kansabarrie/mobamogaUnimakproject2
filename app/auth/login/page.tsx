@@ -23,7 +23,7 @@ export default function LoginPage() {
 	};
 
 	return (
-		<div className="flex min-h-screen items-center justify-center bg-gray-100 px-4">
+		<div className="flex min-h-screen items-center justify-center px-4 bg-cover bg-center bg-no-repeat bg-blend-overlay from-black/70 to-black/30 bg-[url('/images/mogalogo.png')]">
 			<div className="w-full max-w-md rounded-lg bg-white p-6 shadow-md">
 				<h2 className="mb-6 text-center text-2xl font-bold text-gray-800">Login</h2>
 				{error && <p className="mb-4 text-center text-red-500">{error}</p>}
