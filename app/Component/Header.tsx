@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const Header = () => {
 	return (
 		<header className="bg-blue-900 text-white py-4 shadow-md">
@@ -14,7 +15,7 @@ const Header = () => {
 				{/* Navigation Menu */}
 				<nav className="flex space-x-6 float-right px-0">
 					<Link href="/" className="hover:underline">Home</Link>
-					<Link href="/about-us" className="hover:underline">About Us</Link>
+					<Link href="/about" className="hover:underline">About</Link>
 					<Link href="/projects" className="hover:underline">Our Projects</Link>
 					<Link href="/services" className="hover:underline">Services</Link>
 					<Link href="/contact" className="hover:underline">Contact Us</Link>
